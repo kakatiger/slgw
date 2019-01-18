@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=3hDH4Eq3r3jVeyGCiGDrGCgEldK3dR3G">
+        //v2.0版本的引用方式：src="http://api.map.baidu.com/api?v=2.0&ak=您的密钥"
+        </script>
+    <title>联系我们</title>
+    <style>
+        #container{
+            width:919px;
+            height: 200px;
+            margin-top:60px;
+            margin-bottom: 80px;
+        }
+        section{
+           width: 1100px; 
+           margin: 0 auto;
+           box-shadow:0px 0px 27px 0px rgba(0, 0, 0, 0.35);
+           overflow: hidden;
+           padding-left:83px;
+        }
+        section p.title{
+            font-size: 26px;
+            width: 585px;
+            padding-bottom:21px;
+            border-bottom: 2px solid #434343;
+            margin-top:137px;
+            margin-bottom: 30px;
+        }
+        section .address{
+            display: flex;
+            width:860px;
+            justify-content: space-between;
+        }
+        section div.main{
+            line-height: 30px;
+        }
+        section div.branch{
+            line-height: 30px;
+        }
+        section div.branch .sub-title{
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="outside">
+                <li  class="logo"><a href="./index.html"><img src="imgs/logo.png"></a></li>
+                <li class="nav-home">
+                    <a href="./index.html">首页</a>
+                    <ul class='down'>
+                        <li><a href="./cooperation.html">合作指南</a></li>
+                        <li><a href="./home_project.html">项目展示</a></li>
+                    </ul>
+                </li>
+                <li class="nav-enter">
+                    <a href="./enterus.html">走进森霖</a>
+                    <ul class='down'>
+                        <li><a href="./enterus.html?page=bigStory">森霖事迹</a></li>
+                        <li><a href="./enterus.html?page=vision">企业愿景</a></li>
+                        <li><a href="./enterus.html?page=inform">通知和招聘</a></li>
+                    </ul>
+                </li>
+                <li><a href="./news.html">新闻中心</a></li>
+                <li><a href="./industrial_service.html">产业服务</a></li>
+                <li><a href="./cooperation.html">产业合作</a></li>
+                <li><a href="./sales_service.html">售后服务</a></li>
+                <li class="active"><a href="./contact.html">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>    
+    <section>
+        <p class="title">服务网点&nbsp;&nbsp;Service&nbsp; Network</p>
+        <div class="address">
+            <div class="main">
+                        四川森霖农业发展有限公司总部<br>
+                        服务时间:  9:00-18:00<br>
+                        联系电话:  028-6558961     028-65178097<br>
+                         &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 028-65584972<br>
+                        业务合作:  3526718547@qq.com<br>
+                        地址:  成都市高新区环球中心1700号s21312<br>
+                        地铁:  乘地铁1号线至锦城广场站,出站即可到达<br>
+                        公交:  153、172A路、171路、503、74路、801路、898路<br>
+                        驾车: 环中心内设有地上地下停车场,24小时开放<br>
+            </div>
+            <div class="branch">
+                    
+                    <p class="sub-title">安州分公司</p>
+                    绵阳绵安森霖农业发展有限公司<br>
+                    地址:四川省绵阳市安州区花荄镇
+
+                    <p class="sub-title">盐亭分公司</p>
+                    盐亭聚贤森霖农业发晨有限公司<br>
+                    地址:四川省绵阳市盐亭县黄甸镇
+                    
+                    <p class="sub-title">仁寿分公司</p>                    
+                    仁寿森霖志贤农业发展有限公司<br>
+                    地址:四川省眉山市仁寿县慈航镇
+                                            
+                        
+                                            
+            </div>
+        </div>
+        <div id="container"></div> 
+    </section>
+    <footer>
+        <div class="footer">
+            <ul>
+                <li><img src="./imgs/address.png"><br>企业地址 <p>成都市高新区天府大道环球中<br>心1700号S2-1312</p></li>
+                <li><img src="./imgs/email.png"><br>企业邮箱 <p>2949962718@qq.com</p></li>
+                <li><img src="./imgs/phone.png"><br>企业电话 <p>028-65584961</p></li>
+            </ul>
+            <p>&copy;2018 四川森霖农业发展有限公司&nbsp;版权所有<br>蜀ICP备18006334号-1</p>
+        </div>
+    </footer>
+        <script type="text/javascript"> 
+        var map = new BMap.Map("container");
+        var myIcon = new BMap.Icon('location.ico',new BMap.Size(32,32))
+        // 创建地图实例  
+        var point = new BMap.Point(104.06859,30.572824)
+        map.centerAndZoom(new BMap.Point(104.06859,30.572824), 18);  // 初始化地图,设置中心点坐标和地图级别
+        map.addControl(new BMap.NavigationControl());    
+        // map.addControl(new BMap.ScaleControl());    
+        // map.addControl(new BMap.OverviewMapControl());    
+        map.addControl(new BMap.MapTypeControl());    
+        // 创建点坐标  
+        map.centerAndZoom(point, 15);
+        // 初始化地图，设置中心点坐标和地图级别  
+        var mk = new BMap.Marker(point,{icon:myIcon});//创建标注图标
+        map.addOverlay(mk);//将标注添加到地图中
+        var opts = {
+      position : point,    // 指定文本标注所在的地理位置
+      offset   : new BMap.Size(10, -20)    //设置文本偏移量
+    }
+    var label = new BMap.Label("四川森霖农业发展有限公司", opts);  // 创建文本标注对象
+        label.setStyle({
+             color : "red",
+             fontSize : "12px",
+             height : "20px",
+             lineHeight : "20px",
+             fontFamily:"微软雅黑",
+             border:'none'
+         });
+    map.addOverlay(label)
+        </script> 
+</body>
+</html>

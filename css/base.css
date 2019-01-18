@@ -1,0 +1,32 @@
+body,div,dl,dt,dd,ul,li,ol,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin: 0;padding: 0}
+ol,ul{list-style: none;}
+img{
+    border:0;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+html,body{
+    font-family: '微软雅黑', Helvetica, Arial, sans-serif;
+    width:100%;
+    height: 100%;
+}
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  } 
+  header{
+      height: 90px;
+  }
+  .bg-black{
+      background: #434343;
+  }
+  .border-r-7{
+      border-radius: 7px;
+  }
+  iframe{
+      position: relative;
+      z-index: 999;
+  }

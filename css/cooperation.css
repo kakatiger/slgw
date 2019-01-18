@@ -1,0 +1,124 @@
+.banner{
+    width:100%;
+    margin-top:-86px;
+}
+p.underline{
+    position: relative;
+    /* border-bottom:3px solid #4BB418; */
+    width:49px;
+    height:30px;
+    margin:23px auto;
+}
+p.underline span{
+   position: absolute;
+    display: block;
+    width:100px;
+    text-align: center;
+    line-height: 31px;
+    top:-3px;left:50%;
+    margin-left:-50px;
+}
+.cooperation{
+    width:1100px;
+    /* height:650px; */
+    margin:0 auto;
+}
+.main{
+    width:1050px;
+    background:#DCDCDC;
+    margin:33px 25px;
+    /* padding-bottom: 41px; */
+}
+/* 标题部分 */
+.c-title{
+    display: flex;
+}
+.c-title li{
+    width:350px;
+    height: 80px;
+    background: #434343;
+    font-size:18px;
+    color:#fff;
+    text-align: center;
+    cursor: pointer;
+}
+.c-title li.t-progress{
+    background: #313131;
+}
+.c-title li.t-progress p.underline{
+    border-bottom:3px solid #4BB418;
+}
+/* 流程部分 */
+ul.progress{
+    margin-top:36px;
+    margin-left:41px;
+    margin-bottom:41px;
+    overflow: hidden;
+    /* display: none; */
+}
+
+.progress li{
+    width:186px;
+    height: 426px;
+    margin-right:10px;
+    background: #2A2A2A;
+    border-radius: 7px;
+    text-align: center;
+    color:#fff;
+    font-size:17px;
+    float: left;
+    margin-bottom:41px;
+
+}
+.progress li:first-child{
+    cursor: pointer;
+}
+
+.progress li img{
+    margin-top:250px;
+    margin-bottom:33px;
+}
+/* 优势部分 */
+.advantage{
+    display: none;
+}
+.advantage li{
+    display: flex;
+    padding-top:35px;
+    padding-bottom:25px;
+    margin:0 69px;
+    border-bottom:1px solid #434343;
+}
+.advantage li.none-border{
+    border-bottom:none;
+}
+.advantage li.none-border img{
+    margin-bottom: 50px;
+}
+.advantage li p{
+    font-size:18px;
+    line-height: 30px;
+    margin-left:32px;
+}
+
+/* 合作条件部分 */
+.howCoop{
+    width:1050px;
+    height: 989px;
+    background-image: url(../imgs/cooperation/how.png);
+    position: relative;
+    display: none;
+}
+.howCoop p{
+    position: absolute;
+    width:592px;
+    border-bottom:1px solid #fff;
+    padding-left:213px;
+    padding-bottom:40px;
+    bottom:140px;
+    right:69px;
+    font-size:18px;
+    line-height: 31px;
+    color:#fff;
+
+}

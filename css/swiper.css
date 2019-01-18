@@ -1,0 +1,58 @@
+/*轮播图*/
+.ck-slide ul.ck-slide-wrapper {
+    top:0;
+    left:0;
+    z-index:1;
+    margin:0;
+    padding:0;
+    position:absolute;
+}
+.ck-slide ul.ck-slide-wrapper li {
+    position:absolute;
+}
+.ck-slidebox {
+    left:50%;
+    z-index:30;
+    position:absolute;
+    bottom:25px;
+}
+.ck-slidebox ul {
+    height:20px;
+    padding:0 4px;
+}
+.ck-slidebox ul li {
+    float:left;
+    height:12px;
+    margin:4px 7px;
+}
+.ck-slidebox ul li em {
+    width:16px;
+    height:16px;
+    cursor:pointer;
+    background:#fff;
+    border-radius:100%;
+    text-indent:-9999px;
+    display:block;
+}
+.ck-slidebox ul li.current em {
+    background:#4bb418;
+}
+.ck-slidebox ul.dot-wrap li em:hover {
+    background:#4bb418;
+}
+/* 轮播图尺寸 */
+.ck-slide {
+    width:100%;
+    height:36vw;
+    position: relative;
+    /* z-index: -1; */
+    /* margin-top:90px; */
+    overflow:hidden;
+}
+.ck-slide ul.ck-slide-wrapper {
+    height:320px;
+    width:100%;
+}
+.ck-slide ul.ck-slide-wrapper img{
+    width:100vw;
+}

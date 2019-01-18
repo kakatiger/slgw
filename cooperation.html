@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="./css/cooperation.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <title>产业合作</title>
+</head>
+<body>
+    <!-- <iframe src="head.html" frameborder="0" width="100%" height="230px" style="overflow: hidden;" scrolling=no></iframe> -->
+    <header>
+        <nav>
+            <ul class="outside">
+                <li class="logo"><a href="./index.html"><img src="imgs/logo.png"></a></li>
+                <li class="nav-home">
+                    <a href="./index.html">首页</a>
+                    <ul class='down'>
+                        <li><a href="./cooperation.html">合作指南</a></li>
+                        <li><a href="./home_project.html">项目展示</a></li>
+                    </ul>
+                </li>
+                <li class="nav-enter">
+                    <a href="./enterus.html">走进森霖</a>
+                    <ul class='down'>
+                        <li><a href="./enterus.html?page=bigStory">森霖事迹</a></li>
+                        <li><a href="./enterus.html?page=vision">企业愿景</a></li>
+                        <li><a href="./enterus.html?page=inform">通知和招聘</a></li>
+                    </ul>
+                </li>
+                <li><a href="./news.html">新闻中心</a></li>
+                <li><a href="./industrial_service.html">产业服务</a></li>
+                <li class="active"><a href="./cooperation.html">产业合作</a></li>
+                <li><a href="./sales_service.html">售后服务</a></li>
+                <li><a href="./contact.html">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img src="imgs/home/harvester.png" class="banner">
+    <div class="cooperation">
+        <div class="main">
+            <ul class="c-title">
+                <li data-name=".progress" class="t-progress"><p class="underline"><span>合作流程</span></p></li>
+                <li data-name=".advantage"><p class="underline"><span>合作优势</span></p></li>
+                <li data-name=".howCoop"><p class="underline"><span>合作条件</span></p></li>
+            </ul>
+            <ul class="progress bottom">
+               <li class="submit-order"><img src="./imgs/cooperation/progres1.png"><p>提交订单</p></li>
+               <li><img src="./imgs/cooperation/progres2.png"><p>客服回访</p></li>
+               <li><img src="./imgs/cooperation/progres3.png"><p>深入面谈</p></li>
+               <li><img src="./imgs/cooperation/progres4.png"><p>达成合作</p></li>
+               <li><img src="./imgs/cooperation/progres5.png"><p>项目实现</p></li>
+            </ul>
+            <ul class="advantage bottom">
+                <li>
+                    <img src="imgs/cooperation/ad-1.png">
+                    <p>
+                        政府扶持项目<br>
+                        1、紧跟政策，产业发展有前景<br>
+                        2、风险较小，有政府技术依靠<br>
+                        3、抱团发展，返乡创业政府帮扶
+                    </p>
+                </li>
+                <li>
+                    <img src="imgs/cooperation/ad-2.png">
+                    <p>
+                        互联网+农业<br>
+                        1、智慧农业<br>
+                        2、精细农业<br>
+                        3、高效农业<br>
+                        4、绿色农业<br>
+                        5、农业质量效益和竞争力高 
+                    </p>
+                </li>
+                <li>
+                    <img src="imgs/cooperation/ad-3.png">
+                    <p>
+                        产业链联盟<br>
+                        1、联合资源互补<br>
+                        2、市场广泛多样<br>
+                        3、互联网规模经济 
+                    </p>
+                </li>
+                <li class="none-border">
+                    <img src="imgs/cooperation/ad-4.png">
+                    <p>
+                        专业的运营团队<br>
+                        1、运营中心八大事业线，推动产业园区建设发展<br>
+                        2、分公司落地项目管理，推进项目业务衔接响应
+                    </p>
+                </li>
+            </ul>
+            <div class="howCoop bottom">
+                <p>
+                    1、认同森霖农业企业愿景 <br>
+                    2、认可森霖农业产业定位<br>
+                    3、自愿履行产业合同义务<br>
+                    4、对现代化农业产业感兴趣<br>
+                    5、具有良好的信誉和诚信合作的态度<br>
+                    6、具有实现自我价值、追求成功的坚定信念<br>
+                    7、对产业建设发展有信心、有热情
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    <script>
+    var footerHtml=`
+    <div class="footer">
+        <ul>
+            <li><img src="./imgs/address.png"><br>企业地址 <p>成都市高新区天府大道环球中<br>心1700号S2-1312</p></li>
+            <li><img src="./imgs/email.png"><br>企业邮箱 <p>2949962718@qq.com</p></li>
+            <li><img src="./imgs/phone.png"><br>企业电话 <p>028-65584961</p></li>
+        </ul>
+        <p>&copy;2018 四川森霖农业发展有限公司&nbsp;版权所有<br>蜀ICP备18006334号-1</p>
+    </div>
+    `
+    $('footer').html(footerHtml)
+    $('.c-title li').click(function(){
+        //underline
+        $(this).children('.underline').css('border-bottom','3px solid #4bb418').parent().siblings().children('.underline').css('border','none')
+        //bg
+        $(this).css('background','#313131').siblings().css('background','#434343')
+        $($(this).attr('data-name')).show().siblings('.bottom').hide(); 
+    })
+    $('.submit-order').click(function(){
+        window.location.href='./coop_progress.html'
+    })
+
+    var page=window.location.href.split('?')[1].split('=')[1]
+        if(page=='howCoop'){
+            //underline
+        $('.c-title li:last-child').children('.underline').css('border-bottom','3px solid #4bb418').parent().siblings().children('.underline').css('border','none')
+        //bg
+        $('.c-title li:last-child').css('background','#313131').siblings().css('background','#434343')
+        $($('.c-title li:last-child').attr('data-name')).show().siblings('.bottom').hide();
+        }
+        if(page=='advantage'){
+            $('.c-title li:nth(1)').children('.underline').css('border-bottom','3px solid #4bb418').parent().siblings().children('.underline').css('border','none')
+            //bg
+            $('.c-title li:nth(1)').css('background','#313131').siblings().css('background','#434343')
+            $($('.c-title li:nth(1)').attr('data-name')).show().siblings('.bottom').hide();
+        }
+    </script>
+</body>
+</html>

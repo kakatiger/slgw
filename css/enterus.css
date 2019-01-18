@@ -1,0 +1,193 @@
+.banner img{
+    width:100%;
+    margin-top:-86px;
+    min-width: 1100px;
+}
+.banner{
+    position: relative;
+}
+.banner p{
+    position: absolute;
+    font-size:48px;
+    letter-spacing: 24px;
+    color:#fff;
+    width:400px;
+    text-align: center;
+    top:40%;
+    left:50%;
+    margin-left:-200px;
+}
+.describe{
+    width:1100px;
+    margin:0 auto;
+    display: flex;
+    padding-top:95px;
+    padding-left:51px;
+    box-shadow:0px 0px 27px 0px rgba(0, 0, 0, 0.35);}
+/* 左侧导航栏部分 */
+.describe .desc-nav{
+    width:288px;
+}
+.describe .desc-nav ul li{
+    width:261px;
+    height: 64px;
+    margin-bottom:13px;
+    line-height: 64px;
+    text-align: center;
+    position: relative;
+}
+.describe .desc-nav ul li p{
+    font-size:18px;
+    color:#fff;
+    width:41px;
+    height: 50px;
+    white-space: nowrap;
+    margin:0 auto;
+    cursor: pointer;
+}
+.describe .desc-nav ul li:first-child p{
+    border-bottom: 3px solid #4BB418;
+}
+.describe .desc-nav ul li p span{
+    position: absolute;
+    width:130px;
+    left:50%;
+    margin-left:-65px;
+
+}
+/* 关于森霖页面 */
+.describe .left{
+    width: 690px;
+    min-height: 595px;
+    border-left:3px solid #434343;
+    position: relative;
+    padding-left:35px;
+    margin-bottom: 230px;
+}
+/* .describe .desc-about{
+    display: none;
+} */
+.describe .desc-about .pic{
+    width:665px;
+    margin: 16px 0;
+}
+.describe .desc-about .pic img{
+    border-radius: 7px;
+}
+.describe .desc-about .text{
+    width:665px;
+}
+.describe .desc-about .text p{
+    font-size:14px;
+    line-height:30px;
+    font-size:16px;
+    text-indent: 32px;
+}
+
+/* 森霖大事迹页面 */
+.bigStory{
+    position: relative;
+    display: none;
+}
+.bigStory .dottedAndLine{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bigStory .dottedAndLine .line{
+    width: 1px;
+    background-color: #313131;
+}
+.line.line-60{height: 60px;}
+.bigStory .dottedAndLine .dotted{
+    width: 15px;
+    height: 15px;
+    background: #4BB418;
+    border-radius: 50%;
+    margin:3px 0;
+    position: relative;
+}
+.bigStory .dottedAndLine .dotted.black{
+    background: #434343;
+}
+.bigStory .dottedAndLine .dotted img,.bigStory .dottedAndLine .dotted p{
+    position: absolute;
+    width:222px;height: 82px;
+    top:-41px;
+}
+img.i-left{
+    right: 27px;
+}
+img.i-right{
+    left:27px;
+}
+p.p-right{
+    line-height: 30px;
+    text-align: left;
+    left:27px;
+    margin-top:16px;
+}
+p.p-left{
+    line-height: 30px;
+    text-align: right;
+    right:50px;
+    white-space: nowrap;
+    margin-top:16px;
+}
+/* 企业愿景页面 */
+.vision{
+    display: none;
+}
+.vision p{
+    text-align: center;
+    font-size:18px;
+    margin-bottom: 39px;
+}
+.vision>div{
+    width:500px;
+    height: 82px;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto 28px;
+}
+.vision>div img{
+    width:222px;
+    height: 82px;
+}
+.vision>div p{
+    width:222px;
+    font-size:14px;
+    text-align: left;
+    line-height: 30px;
+}
+.vision>div:nth-child(2n-1) p{
+    text-align: right;
+}
+.vision>div p span{
+    font-size:18px;
+}
+
+/* 通知和招聘页面 */
+.inform{
+    display: none;
+}
+.inform .details{
+    font-size:14px;
+    line-height: 28px;
+    border:1px solid #ccc;
+    padding-left: 24px;
+    padding-top:12px;
+    margin-bottom: 30px;
+    display: none;
+}
+.inform .details button{
+    margin-left: 565px;
+}
+.inform>div{
+    width: 501px;
+    display: flex;
+    justify-content: space-between;
+    font-size:18px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}

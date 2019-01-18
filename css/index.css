@@ -1,0 +1,192 @@
+
+
+.container{
+    width:100%;
+    margin:-10px auto 0;
+    background: #E9E9E9;
+}
+.news{
+    overflow: hidden;
+    width:1100px;
+    margin:0 auto;
+    padding-top:123px;
+    padding-bottom: 71px;
+    padding-left:45px;
+    background: #fff;
+}
+ .title{
+    margin-bottom: 29px;
+    font-size:26px;
+}
+ .title p a{
+    font-size:26px;
+    color:black;
+}
+.title p span{
+    font-size:14px;
+}
+.division{/*中间分割线*/
+    width: 2px;
+    height: 194px;
+    background: #434343;
+    float: left;
+    margin:67px 11px 0 15px;
+}
+.movement{
+    width:680px;
+    float: left;
+}
+.movement .movement-news{
+    display: flex;
+    height: 194px;
+    padding:20px 25px 20px 18px;
+}
+.movement-content {
+    width: 343px;
+    height: 140px;
+    margin:2px 0 3px 19px;
+    overflow-y: auto;
+
+}
+.movement-content p.title{
+    color:#fff;
+    font-size:16px;
+    line-height: 34px;
+    cursor: pointer;
+    margin:0;
+}
+.movement-content p.details{
+    display: none;
+    cursor:default; 
+    text-align: center;
+}
+/* 点击新闻显示内容 */
+.showInfo{
+    text-align: left;
+    border:1px solid #ccc;
+    float: left;
+    padding:30px 20px 50px 20px;
+    margin-right: 38px;
+    display: none;
+}
+ .showInfo span.title{
+    display: block;
+    text-align: center;
+}
+.showInfo span.body{
+    display: block;
+    text-indent: 30px;
+    font-size: 14px;
+    line-height: 30px;
+}
+.inform{
+    width:307px;
+    float: left;
+}
+.inform .inform-news{
+    height: 194px;
+    padding:23px 0px 28px 27px;
+}
+.inform .inform-news .inform-content{
+    width:260px;
+    height: 140px;
+    overflow: hidden;
+}
+.inform .inform-news p{
+    font-size:16px;
+    line-height: 34px;
+    color: #fff;
+    overflow: hidden;
+}
+.inform .inform-news p a{
+    float: left;
+    width:158px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 34px;
+}
+.inform .inform-news p span{
+    float: left;
+    margin-left: -10px;
+    margin-bottom:-10px;
+}
+.fivestar{
+    margin-top:59px;
+    float: left;
+}
+/* 将滑动条隐藏 */
+.movement-content::-webkit-scrollbar{
+    width:0px;
+    height: 0px;
+}
+/* 注释部分为设置滑动条样式 */
+/* .movement-content::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: #4bb418;
+}
+.movement-content::-webkit-scrollbar-track{
+    background: #b5b5b5;
+    border-radius: 2px;
+} */
+.movement-content p{
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/*项目展示部分*/
+.project{
+    width:1100px;
+    height: 430px;
+    margin:-1px auto;
+    display: flex;
+    padding:44px 0 94px 43px;
+}
+.project .show{
+    width:743px;
+}
+.project .show .title{
+    display: flex;
+    justify-content: space-between;
+}
+.project .show .title .more a{
+    font-size:14px;
+}
+
+.show .show-item{
+    width:100%;
+    height: 236px;
+    display: flex;
+    text-align: center;
+    padding-top:14px;
+    padding-left:16px;
+}
+.show .show-item a{
+    margin-right:13px;
+}
+.show .show-item a img{
+  margin-bottom: 5px;  
+}
+.project .cooperation{
+    width:260px;
+    margin-left:13px;
+}
+.cooperation .cooperation-item{
+    width:100%;
+    height:236px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding:12px 0;
+}
+.cooperation .cooperation-item a{
+    width:222px;
+    height: 56px;
+    background: #fff;
+    line-height: 56px;
+    color:black;
+    border-radius: 5px;
+    text-align: center;
+    font-size:18px;
+}

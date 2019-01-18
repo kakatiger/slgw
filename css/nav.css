@@ -1,0 +1,82 @@
+nav{
+    height:90px;
+    width:100%;
+    background: #434343;
+    position: relative;
+    z-index: 999;
+}
+nav ul.outside{
+    display: flex;
+    margin:0 auto;
+    width:1200px;
+    height: 90px;
+    justify-content: space-between;
+}
+nav ul.outside .logo img{
+    margin-top:-8px;
+}
+nav ul.outside>li{
+    font-size:16px;
+    font-weight: bold;
+    position: relative;
+    height: 90px;
+    padding:28px 25px 15px;
+    border-top:6px solid transparent;
+}
+nav ul.outside .nav-home{
+    width: 114px;
+    text-align: center;
+}
+nav ul.outside .nav-enter{
+    width: 120px;
+}
+nav ul.outside li.active{
+    border-top:6px solid #4BB418;
+    background: #313131;
+}
+nav ul li .down{
+    position: absolute;
+    top:84px;
+    left:0px;
+    background: #313131;
+    padding: 15px 0 0;
+    display: none;
+}
+nav ul li .down li{
+    height: 39px;
+    line-height: 20px;
+    padding:0 25px;
+}
+nav ul li.nav-home .down li{
+    padding-right: 33px;
+}
+nav ul li .down a{
+    font-size:14px;
+    font-weight:bold;
+}
+/*设置hover时激活状态*/
+nav ul.outside>li:hover{
+    background: #313131;
+}
+nav ul.outside>li.logo:hover{
+    background: #434343; 
+}
+nav ul.outside>li:hover .down{
+    display: block;
+}
+.footer ul{
+    display: flex;
+    width:1100px;
+    margin:100px auto 60px;
+    text-align: center;
+    justify-content: space-around;
+    font-size:18px;
+}
+.footer ul li p{
+    margin-top:22px;
+    font-size:14px;
+}
+.footer p{
+    text-align: center;
+    font-size:14px;
+}

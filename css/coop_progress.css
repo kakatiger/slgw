@@ -1,0 +1,131 @@
+.progress{
+    width:1100px;
+    box-shadow:0px 0px 27px 0px rgba(0, 0, 0, 0.35);    margin:0 auto;
+    padding:127px 0 200px 88px;
+    border-radius: 0px  0px   7px  7px;
+}
+.progress .title{
+    font-size:26px;
+    columns: #313131;
+    margin:0;
+}
+.progress ul{
+    overflow: hidden;
+}
+.progress ul li{
+    float: left;
+    color:#313131;
+}
+.progress .progress-details{
+    width:582px;
+    border-bottom:2px solid #434343;
+    margin-top:35px;
+    margin-bottom:51px;
+    padding-bottom: 20px;
+}
+.progress .progress-details li{
+    font-size:18px;
+    margin-right:18px;
+}
+.progress p{
+    width: 927px;
+    font-size:18px;
+    border-bottom: 2px solid #dcdcdc;
+    padding-bottom: 14px;
+    margin-bottom:15px;
+}
+ul.coop-methods li,ul.coop-rent li,ul.coop-invest li,ul.area li{
+    width:152px;
+    height:33px;
+    border:1px solid #dcdcdc;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 7px;
+    margin-right:22px;
+    cursor: pointer;
+}
+ul.coop-rent,ul.coop-invest{
+    margin-top:20px;
+    margin-bottom:63px;
+}
+ul.coop-invest{
+    display: none;
+}
+ul li.active{
+    background:#4bb418;
+    color:#fff;
+}
+div.button{
+    text-align: right;
+    margin-top:128px;
+    padding-right: 90px;
+}
+div.button button{
+    width:229px;
+    height: 50px;
+    background: #4bb418;
+    border-radius: 7px;
+    outline:none;
+    cursor: pointer;
+    border:none;
+    font-size: 28px;
+    color:#fff;
+}
+/* 弹窗页面 */
+.pop-up{
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1001;
+}
+.pop-up .info{
+    width:456px;
+    height: 532px;
+    background: #fff;
+    margin:6% auto;
+    text-align: center;
+    overflow: hidden;
+    box-shadow:0px 0px 27px 0px rgba(0, 0, 0, 0.35);
+    border-radius: 7px;
+}
+.pop-up .info input{
+    width: 325px;
+    height: 32px;
+    border:0;
+    font-size: 18px;
+    padding-bottom:8px;
+    text-align: center;
+    outline: none;
+    border-bottom: 2px solid #dcdcdc;
+    margin-bottom: 10px;
+}
+.pop-up .info p{
+    font-size:18px;
+    margin-top:82px;
+    margin-bottom: 34px;
+}
+.pop-up .info p.nameNotice,.pop-up .info p.telNotice{
+    height: 0;
+    margin:0;
+    color: red;
+    font-size:12px;
+    display: none;
+}
+.pop-up .info .operate button{
+    width: 152px;
+    height:33px;
+    border-radius: 7px;
+    font-size:17px;
+    border:1px solid #DCDCDC;
+    margin-top:60px;
+}
+.pop-up .info .operate button.cancel{
+    background: #fff;
+    margin-right: 25px;
+}
+.pop-up .info .operate button.comfirm{
+    background: #4BB418;
+}

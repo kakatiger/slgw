@@ -1,0 +1,79 @@
+.banner{
+    width:100%;
+    margin-top:-86px;
+}
+.describe{
+    width:1100px;
+    margin:0 auto;
+    display: flex;
+    padding-top:95px;
+    padding-left:51px;
+    padding-bottom:200px;
+    box-shadow:0px 0px 27px 0px rgba(0, 0, 0, 0.35);
+}
+.describe .desc-nav{
+    width:288px;
+}
+.describe .desc-nav ul li{
+    width:261px;
+    height: 64px;
+    margin-bottom:13px;
+    line-height: 64px;
+    text-align: center;
+    position: relative;
+}
+.describe .desc-nav ul li p{
+    font-size:18px;
+    color:#fff;
+    width:41px;
+    height: 50px;
+    white-space: nowrap;
+    margin:0 auto;
+    cursor: pointer;
+}
+.describe .desc-nav ul li:first-child p{
+    border-bottom: 3px solid #4BB418;
+}
+.describe .desc-nav ul li p span{
+    position: absolute;
+    width:130px;
+    left:50%;
+    margin-left:-65px;
+
+}
+.describe .desc-details{
+    width: 690px;
+    border-left:3px solid #434343;
+    position: relative;
+    padding-left:35px;
+}
+.describe .desc-details .title{
+    position: absolute;
+    font-size:24px;
+    text-align: center;
+    width:200px;
+    left:50%;
+    margin-left:-100px;
+    top:-46px;
+}
+.describe .desc-details .pic{
+    width:665px;
+    height: 225px;
+    text-align: center;
+}
+.describe .desc-details .pic img.pic-pro{
+    display: none;
+}
+.describe .desc-details .text{
+    width:665px;
+}
+.describe .desc-details .text p{
+    font-size:14px;
+    line-height:30px;
+}
+.describe .desc-details .text p span{
+    font-weight: 800;
+}
+.describe .desc-details .text p.text-desc{
+    display: none;
+}
